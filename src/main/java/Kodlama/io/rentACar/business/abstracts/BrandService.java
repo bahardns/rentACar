@@ -2,9 +2,11 @@ package Kodlama.io.rentACar.business.abstracts;
 
 import java.util.List;
 
-import Kodlama.io.rentACar.entities.concretes.Brand;
+import Kodlama.io.rentACar.business.requests.CreateBrandRequest;
+import Kodlama.io.rentACar.business.responses.GetAllBrandsResponse;
 
 public interface BrandService {
 
-	List<Brand> getAll();
+	List<GetAllBrandsResponse> getAll();
+	void add(CreateBrandRequest createBrandRequest);
 }
